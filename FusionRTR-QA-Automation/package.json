@@ -1,0 +1,38 @@
+{
+  "name": "play-ts-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:FaCT_test": "cross-env ENV=FaCT_test FORCE_COLOR=0 cucumber-js --config=config/cucumber.js||true",
+    "zip-report": "npx ts-node src/helper/util/zipreport.ts",
+    "posttest": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cross-env ENV=qa FORCE_COLOR=0 cucumber-js --config=config/cucumber.js -p rerun @rerun.txt"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber - TS",
+    "playwright-cucumber"
+  ],
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@playwright/test": "1.35.0",
+    "@types/imap": "^0.8.40",
+    "archiver": "^7.0.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.3.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.8.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "async-retry": "^1.3.3",
+    "axios": "^1.7.7",
+    "exceljs": "^4.4.0",
+    "imap": "^0.8.19",
+    "play-ts-cucumber": "file:",
+    "playwright": "^1.48.2"
+  }
+}

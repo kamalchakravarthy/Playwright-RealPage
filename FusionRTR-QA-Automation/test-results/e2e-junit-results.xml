@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="204.84305969200003" tests="1">
+  <testcase classname="RTR Testcases" name="FA_VS_006_Adjust Asset (Single Asset)" time="204.84305969200003">
+    <failure type="TimeoutError" message="locator.click: Timeout 20000ms exceeded.&#xA;=========================== logs ===========================&#xA;waiting for getByRole('button', { name: 'Submit', exact: true })&#xA;  locator resolved to &lt;button accesskey=&quot;m&quot; class=&quot;x7j p_AFTextOnly&quot; onclick=&quot;…>…&lt;/button>&#xA;attempting click action&#xA;  waiting for element to be visible, enabled and stable&#xA;  element is visible, enabled and stable&#xA;  scrolling into view if needed&#xA;  done scrolling&#xA;============================================================"><![CDATA[locator.click: Timeout 20000ms exceeded.
+=========================== logs ===========================
+waiting for getByRole('button', { name: 'Submit', exact: true })
+  locator resolved to <button accesskey="m" class="x7j p_AFTextOnly" onclick="…>…</button>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+============================================================
+    at C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:370:120
+    at step (C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:33:23)
+    at Object.next (C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:14:53)
+    at C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:8:71
+    at __awaiter (C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:4:12)
+    at World.<anonymous> (C:\Playwright\FusionRTR-QA-Automation\FusionRTR-QA-Automation4\FusionRTR-QA-Automation\src\test\steps\FACT_RTR.ts:367:83)]]></failure>
+    <system-out><![CDATA[Given I login to the fusion application using the "RP_FA_Accountant" ro...passed
+When I click on the "Fixed Assets" option in the Navigator................passed
+And I click on "Assets" from the "Fixed Assets" Dropdown..................passed
+Then I should see "Assets" Page...........................................passed
+When I create an asset....................................................passed
+And I click on the "Adjust Assets" from the Task Panel....................passed
+Then I should see "Adjust Assets" Page....................................passed
+When I search for the asset to be modified................................passed
+Then search result will be displayed......................................passed
+When I select the asset and click on "Change Financial Details" button....passed
+Then I should see "Change Financial Details:" Page........................passed
+When I update details for Cost............................................passed
+And I click on the "Submit" button........................................failed
+Then I should see "Adjust Assets" Page...................................skipped
+When I click on the "Fixed Assets" option in the Navigator...............skipped
+And I click on "Assets" from the "Fixed Assets" Dropdown.................skipped
+And I click on the "Inquire Assets" from the Task Panel..................skipped
+Then I should see "Asset Inquiry" Page...................................skipped
+When I search for the asset on which adjustment has been made..........undefined
+Then I should see that asset will be reflected with changes performe...undefined
+When I click on transaction tab and search with asset number...........undefined
+Then I should see adjustment details...................................undefined]]></system-out>
+  </testcase>
+</testsuite>
